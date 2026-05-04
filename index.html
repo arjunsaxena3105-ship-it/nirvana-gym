@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nirvana Gym – The Fitness Studio | Awadhpuri, Bhopal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast">Message Sent!</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="logo-main">NIRVANA</span>
+    <span class="logo-sub">The Fitness Studio</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#membership">Plans</a></li>
+    <li><a href="#trainers">Trainers</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#membership" class="nav-cta">Join Now</a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#services" onclick="closeMobileMenu()">Services</a>
+  <a href="#membership" onclick="closeMobileMenu()">Plans</a>
+  <a href="#trainers" onclick="closeMobileMenu()">Trainers</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <a href="#membership" class="btn-primary" onclick="closeMobileMenu()"><span>Join Now</span></a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-photo-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-accent"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">Awadhpuri's #1 Fitness Studio</div>
+    <h1 class="hero-title">
+      Transform<br>
+      Your <span class="accent">Body.</span><br>
+      <span class="stroke">Elevate</span> Mind.
+    </h1>
+    <p class="hero-sub">Train at Awadhpuri's most dynamic fitness studio — Bhopal</p>
+    <div class="hero-actions">
+      <a href="#membership" class="btn-primary"><span>Join Now</span></a>
+      <a href="#contact" class="btn-outline">Book Free Trial</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-number">5<span>+</span></div>
+      <div class="stat-label">Years Strong</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">1K<span>+</span></div>
+      <div class="stat-label">Members</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">15<span>+</span></div>
+      <div class="stat-label">Expert Trainers</div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    Scroll to explore
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal-left">
+      <div class="about-image-stack">
+        <div class="about-img-main" style="overflow:hidden;padding:0;">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=85&fit=crop" alt="Nirvana Gym Interior" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="about-img-secondary" style="overflow:hidden;padding:0;">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=85&fit=crop" alt="Training at Nirvana" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="about-badge-float">
+          <div class="big">5+</div>
+          <div class="small">Years of<br>Excellence</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-text reveal-right">
+      <div class="section-label">Our Story</div>
+      <h2 class="section-title">Built for<br><span style="color:var(--neon)">Champions</span></h2>
+      <p class="about-desc">
+        Nirvana Gym – The Fitness Studio was born from a simple belief: everyone deserves access to world-class fitness. Located in the heart of Awadhpuri, Bhopal, we've built a space where goals are shattered daily, and every rep counts. From beginners finding their stride to athletes pushing limits, Nirvana is your home for transformation.
+      </p>
+
+      <div class="about-features">
+        <div class="about-feature">
+          <div class="feature-icon">&#x1F3C5;</div>
+          <div class="feature-text">
+            <h4>Certified Trainers</h4>
+            <p>Nationally certified coaches with proven results</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="feature-icon">&#x26A1;</div>
+          <div class="feature-text">
+            <h4>Premium Equipment</h4>
+            <p>Latest machines and free weights for every need</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="feature-icon">&#x1F91D;</div>
+          <div class="feature-text">
+            <h4>Community Driven</h4>
+            <p>A tribe that motivates and supports your journey</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="feature-icon">&#x1F9FC;</div>
+          <div class="feature-text">
+            <h4>Hygienic Facility</h4>
+            <p>Immaculate standards, cleaned daily for your health</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat">
+          <div class="num counter" data-target="5">0</div>
+          <div class="lbl">Years Active</div>
+        </div>
+        <div class="stat">
+          <div class="num counter" data-target="1000">0</div>
+          <div class="lbl">Members Transformed</div>
+        </div>
+        <div class="stat">
+          <div class="num counter" data-target="15">0</div>
+          <div class="lbl">Expert Trainers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header reveal">
+    <div>
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Elite<br>Programs</h2>
+    </div>
+    <p>Every program is designed by experts and tailored to push you beyond your limits — from day one.</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-num">01</div>
+      <span class="service-icon">&#x1F3CB;</span>
+      <h3 class="service-name">Strength Training</h3>
+      <p class="service-desc">Build raw power and sculpt your physique with progressive overload programs designed by certified strength coaches.</p>
+      <div class="service-arrow">&rarr;</div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.1s">
+      <div class="service-num">02</div>
+      <span class="service-icon">&#x1F525;</span>
+      <h3 class="service-name">Weight Loss</h3>
+      <p class="service-desc">Science-backed fat loss programs combining HIIT, nutrition guidance, and metabolic conditioning for real results.</p>
+      <div class="service-arrow">&rarr;</div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.2s">
+      <div class="service-num">03</div>
+      <span class="service-icon">&#x26A1;</span>
+      <h3 class="service-name">CrossFit</h3>
+      <p class="service-desc">High-intensity functional movements that build endurance, strength, and mental toughness simultaneously.</p>
+      <div class="service-arrow">&rarr;</div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.1s">
+      <div class="service-num">04</div>
+      <span class="service-icon">&#x1F3AF;</span>
+      <h3 class="service-name">Personal Training</h3>
+      <p class="service-desc">One-on-one sessions with certified coaches who craft personalized plans to smash your specific goals.</p>
+      <div class="service-arrow">&rarr;</div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.2s">
+      <div class="service-num">05</div>
+      <span class="service-icon">&#x1F483;</span>
+      <h3 class="service-name">Zumba & Yoga</h3>
+      <p class="service-desc">Find balance, flexibility, and joy in our energetic Zumba sessions and calming yoga classes for all levels.</p>
+      <div class="service-arrow">&rarr;</div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.3s">
+      <div class="service-num">06</div>
+      <span class="service-icon">&#x1F3C3;</span>
+      <h3 class="service-name">Functional Training</h3>
+      <p class="service-desc">Train movements, not just muscles. Build athletic performance that translates to real-world strength.</p>
+      <div class="service-arrow">&rarr;</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="why-grid">
+    <div class="why-left">
+      <div class="section-label reveal">Why Nirvana</div>
+      <h2 class="section-title reveal">The<br>Difference<br>Is <span style="color:var(--neon)">Real</span></h2>
+
+      <div class="why-features">
+        <div class="why-card reveal" style="transition-delay:0.1s">
+          <div class="icon">&#x1F3C5;</div>
+          <h3>Certified Trainers</h3>
+          <p>All coaches are nationally certified with 3+ years of hands-on experience.</p>
+        </div>
+        <div class="why-card reveal" style="transition-delay:0.2s">
+          <div class="icon">&#x2699;&#xFE0F;</div>
+          <h3>Advanced Equipment</h3>
+          <p>Top-of-the-line machines and free weights updated regularly.</p>
+        </div>
+        <div class="why-card reveal" style="transition-delay:0.1s">
+          <div class="icon">&#x1F4CB;</div>
+          <h3>Personalized Plans</h3>
+          <p>Every member gets a custom workout and nutrition roadmap.</p>
+        </div>
+        <div class="why-card reveal" style="transition-delay:0.2s">
+          <div class="icon">&#x2728;</div>
+          <h3>Hygienic Space</h3>
+          <p>Cleaned multiple times daily. Your health is our priority.</p>
+        </div>
+        <div class="why-card reveal" style="transition-delay:0.1s">
+          <div class="icon">&#x1F4AA;</div>
+          <h3>Friendly Community</h3>
+          <p>A supportive tribe that celebrates every milestone with you.</p>
+        </div>
+        <div class="why-card reveal" style="transition-delay:0.2s">
+          <div class="icon">&#x23F0;</div>
+          <h3>Flexible Hours</h3>
+          <p>Early bird to late night sessions to fit your schedule perfectly.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-visual reveal-right">
+      <div class="why-big-stat" style="position:relative;overflow:hidden;padding:0;min-height:220px;">
+        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80&fit=crop" alt="Gym" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.25;">
+        <div style="position:relative;z-index:1;padding:50px;text-align:center;">
+          <div class="num" style="font-family:var(--font-display);font-size:70px;color:var(--neon);line-height:1;">&#x2B50; 4.9</div>
+          <div class="lbl" style="font-family:var(--font-cond);font-size:13px;letter-spacing:4px;color:var(--gray);text-transform:uppercase;margin-top:10px;">Average Google Rating</div>
+          <div style="font-family:var(--font-cond);font-size:11px;letter-spacing:3px;color:rgba(170,255,0,0.6);margin-top:8px;text-transform:uppercase;">361+ Verified Reviews</div>
+        </div>
+      </div>
+      <div class="why-small-stats">
+        <div class="why-small-stat">
+          <div class="num"><span class="counter" data-target="98">0</span><span>%</span></div>
+          <div class="lbl">Satisfaction Rate</div>
+        </div>
+        <div class="why-small-stat">
+          <div class="num"><span class="counter" data-target="500">0</span><span>+</span></div>
+          <div class="lbl">Success Stories</div>
+        </div>
+        <div class="why-small-stat">
+          <div class="num"><span class="counter" data-target="20">0</span><span>+</span></div>
+          <div class="lbl">Classes / Week</div>
+        </div>
+        <div class="why-small-stat">
+          <div class="num"><span class="counter" data-target="365">0</span></div>
+          <div class="lbl">Days Open</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section id="membership">
+  <div class="section-label">Membership Plans</div>
+  <h2 class="section-title reveal">Invest in<br><span style="color:var(--neon)">Yourself</span></h2>
+  <p style="color:var(--gray); margin-bottom:70px; font-size:16px;" class="reveal">No hidden charges. Cancel anytime. Pure results.</p>
+
+  <div class="pricing-grid">
+    <div class="pricing-card reveal reveal-left">
+      <div class="plan-period">Monthly</div>
+      <div class="plan-price">
+        <span class="price-currency">&#x20B9;</span>
+        <span class="price-amount">999</span>
+      </div>
+      <div class="price-period">per month</div>
+      <div class="plan-savings">Flexible access</div>
+      <div class="plan-divider"></div>
+      <ul class="plan-features">
+        <li>Full Gym Access</li>
+        <li>Group Classes Included</li>
+        <li>Locker Room Access</li>
+        <li>Fitness Assessment</li>
+        <li>Basic Nutrition Guide</li>
+      </ul>
+      <a href="#contact" class="btn-plan btn-plan-outline">Get Started</a>
+    </div>
+
+    <div class="pricing-card featured reveal">
+      <div class="best-value">Best Value</div>
+      <div class="plan-period">Quarterly</div>
+      <div class="plan-price">
+        <span class="price-currency">&#x20B9;</span>
+        <span class="price-amount">799</span>
+      </div>
+      <div class="price-period">per month &middot; &#x20B9;2,399 total</div>
+      <div class="plan-savings">Save &#x20B9;598 vs Monthly</div>
+      <div class="plan-divider"></div>
+      <ul class="plan-features">
+        <li>Everything in Monthly</li>
+        <li>1 Personal Training Session/mo</li>
+        <li>Personalized Workout Plan</li>
+        <li>Diet & Nutrition Guidance</li>
+        <li>Progress Tracking</li>
+        <li>Priority Class Booking</li>
+      </ul>
+      <a href="#contact" class="btn-plan btn-plan-solid">Get Started</a>
+    </div>
+
+    <div class="pricing-card reveal reveal-right">
+      <div class="plan-period">Yearly</div>
+      <div class="plan-price">
+        <span class="price-currency">&#x20B9;</span>
+        <span class="price-amount">599</span>
+      </div>
+      <div class="price-period">per month &middot; &#x20B9;7,188 total</div>
+      <div class="plan-savings">Save &#x20B9;4,800 vs Monthly</div>
+      <div class="plan-divider"></div>
+      <ul class="plan-features">
+        <li>Everything in Quarterly</li>
+        <li>Unlimited Personal Training</li>
+        <li>Dedicated Coach Assigned</li>
+        <li>Monthly Body Composition</li>
+        <li>Guest Passes (2/month)</li>
+        <li>Merchandise Welcome Kit</li>
+        <li>VIP Member Perks</li>
+      </ul>
+      <a href="#contact" class="btn-plan btn-plan-outline">Get Started</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div style="padding: 0 60px; max-width: 1300px; margin: 0 auto 50px;">
+    <div class="section-label reveal">Our Space</div>
+    <h2 class="section-title reveal">Inside<br><span style="color:var(--neon)">Nirvana</span></h2>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&q=80&fit=crop" alt="Strength Zone" class="gallery-inner" style="object-fit:cover;width:100%;height:100%;">
+      <div class="gallery-overlay">
+        <div class="gallery-label">Strength Zone</div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=700&q=80&fit=crop" alt="Weight Training" class="gallery-inner" style="object-fit:cover;width:100%;height:100%;">
+      <div class="gallery-overlay">
+        <div class="gallery-label">Weight Training</div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700&q=80&fit=crop" alt="Cardio Floor" class="gallery-inner" style="object-fit:cover;width:100%;height:100%;">
+      <div class="gallery-overlay">
+        <div class="gallery-label">Cardio Floor</div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=700&q=80&fit=crop" alt="Yoga Studio" class="gallery-inner" style="object-fit:cover;width:100%;height:100%;">
+      <div class="gallery-overlay">
+        <div class="gallery-label">Yoga Studio</div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=700&q=80&fit=crop" alt="CrossFit Arena" class="gallery-inner" style="object-fit:cover;width:100%;height:100%;">
+      <div class="gallery-overlay">
+        <div class="gallery-label">CrossFit Arena</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM FEED -->
+<section id="instagram" style="background:var(--black); padding: 100px 60px;">
+  <div style="max-width:1300px; margin:0 auto;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:50px; flex-wrap:wrap; gap:20px;">
+      <div>
+        <div class="section-label reveal">Follow Us</div>
+        <h2 class="section-title reveal">Live from<br><span style="color:var(--neon)">@nirvana_<br>redefineaesthetics</span></h2>
+      </div>
+      <a href="https://www.instagram.com/nirvana_redefineaesthetics/" target="_blank" rel="noopener" class="btn-outline reveal" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        View Profile
+      </a>
+    </div>
+
+    <div class="insta-grid reveal">
+      <a href="https://www.instagram.com/nirvana_redefineaesthetics/" target="_blank" rel="noopener" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=500&q=80&fit=crop" alt="Nirvana Gym Post">
+        <div class="insta-overlay">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/nirvana_redefineaesthetics/" target="_blank" rel="noopener" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=500&q=80&fit=crop" alt="Nirvana Gym Post">
+        <div class="insta-overlay">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/nirvana_redefineaesthetics/" target="_blank" rel="noopener" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?w=500&q=80&fit=crop" alt="Nirvana Gym Post">
+        <div class="insta-overlay">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/nirvana_redefineaesthetics/" target="_blank" rel="noopener" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=500&q=80&fit=crop" alt="Nirvana Gym Post">
+        <div class="insta-overlay">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/nirvana_redefineaesthetics/" target="_blank" rel="noopener" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80&fit=crop" alt="Nirvana Gym Post">
+        <div class="insta-overlay">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/nirvana_redefineaesthetics/" target="_blank" rel="noopener" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=500&q=80&fit=crop" alt="Nirvana Gym Post">
+        <div class="insta-overlay">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/nirvana_redefineaesthetics/" target="_blank" rel="noopener" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1583454155184-870a1f63aebc?w=500&q=80&fit=crop" alt="Nirvana Gym Post">
+        <div class="insta-overlay">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/nirvana_redefineaesthetics/" target="_blank" rel="noopener" class="insta-item">
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=500&q=80&fit=crop" alt="Nirvana Gym Post">
+        <div class="insta-overlay">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/nirvana_redefineaesthetics/" target="_blank" rel="noopener" class="insta-item insta-cta-tile">
+        <div class="insta-cta-inner">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--neon)" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="var(--neon)" stroke="none"/></svg>
+          <div style="font-family:var(--font-display);font-size:22px;letter-spacing:3px;margin-top:15px;">FOLLOW US</div>
+          <div style="font-family:var(--font-cond);font-size:12px;letter-spacing:3px;color:var(--gray);margin-top:5px;">@nirvana_redefineaesthetics</div>
+          <div style="margin-top:20px;font-family:var(--font-cond);font-size:12px;letter-spacing:3px;color:var(--neon);text-transform:uppercase;">View All Posts &rarr;</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section id="trainers">
+  <div class="trainers-header">
+    <div class="section-label reveal">Meet the Team</div>
+    <h2 class="section-title reveal">Your <span style="color:var(--neon)">Coaches</span></h2>
+  </div>
+
+  <div class="trainers-grid">
+    <div class="trainer-card reveal reveal-left">
+      <div class="trainer-img t1" style="overflow:hidden;padding:0;">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=85&fit=crop&crop=top" alt="Rahul Sharma" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+      </div>
+      <div class="trainer-neon-line"></div>
+      <div class="trainer-info">
+        <h3>Rahul Sharma</h3>
+        <div class="trainer-spec">Head Trainer &middot; Strength & Conditioning</div>
+        <p>8+ years transforming bodies. Specializes in powerlifting, bodybuilding, and athletic performance. NSCA certified.</p>
+      </div>
+    </div>
+    <div class="trainer-card reveal" style="transition-delay:0.15s">
+      <div class="trainer-img t2" style="overflow:hidden;padding:0;">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=85&fit=crop&crop=top" alt="Priya Verma" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+      </div>
+      <div class="trainer-neon-line"></div>
+      <div class="trainer-info">
+        <h3>Priya Verma</h3>
+        <div class="trainer-spec">Yoga & Wellness Coach</div>
+        <p>6+ years in functional movement, yoga, and Zumba. Passionate about helping beginners build lifelong habits.</p>
+      </div>
+    </div>
+    <div class="trainer-card reveal reveal-right" style="transition-delay:0.2s">
+      <div class="trainer-img t3" style="overflow:hidden;padding:0;">
+        <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&q=85&fit=crop&crop=top" alt="Amit Patel" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+      </div>
+      <div class="trainer-neon-line"></div>
+      <div class="trainer-info">
+        <h3>Amit Patel</h3>
+        <div class="trainer-spec">CrossFit & Fat Loss Specialist</div>
+        <p>CrossFit Level 2 certified. Expert in weight loss programs, HIIT training, and metabolic conditioning.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="testimonials-header reveal">
+    <div class="section-label">Real Results</div>
+    <h2 class="section-title">Members <span style="color:var(--neon)">Speak</span></h2>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal reveal-left">
+      <div class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <p class="testimonial-text">"The atmosphere at Nirvana is absolutely electrifying. Top-class equipment, motivated trainers, and an environment that pushes you to be better every single day. Best gym in Bhopal, no doubt!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar av1">&#x1F468;</div>
+        <div>
+          <div class="author-name">Vikram Singh</div>
+          <div class="author-meta">Member since 2022 &middot; Lost 18 kg</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal" style="transition-delay:0.15s">
+      <div class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <p class="testimonial-text">"Best gym in Awadhpuri by far. The trainers are incredibly supportive and knowledgeable. Rahul sir designed a program that got me results in just 3 months that I couldn't get in years elsewhere."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar av2">&#x1F469;</div>
+        <div>
+          <div class="author-name">Neha Gupta</div>
+          <div class="author-meta">Member since 2023 &middot; Strength Goals Achieved</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal reveal-right" style="transition-delay:0.2s">
+      <div class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <p class="testimonial-text">"Joined as a complete beginner and now I can't imagine a day without the gym. The community here is unreal — supportive, fun, and genuinely invested in your growth. Nirvana changed my life!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar av3">&#x1F468;</div>
+        <div>
+          <div class="author-name">Arjun Tiwari</div>
+          <div class="author-meta">Member since 2021 &middot; Transformed Completely</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BMI CALCULATOR -->
+<section id="bmi">
+  <div class="bmi-container">
+    <div class="section-label">Free Tool</div>
+    <h2 class="section-title reveal">Check Your<br><span style="color:var(--neon)">BMI</span></h2>
+    <p class="reveal">Understand your body better. Use our quick BMI calculator to kickstart your fitness journey.</p>
+
+    <div class="bmi-form reveal">
+      <div class="bmi-inputs">
+        <div class="bmi-field">
+          <label>Height (cm)</label>
+          <input type="number" id="height" placeholder="e.g. 170" min="100" max="250">
+        </div>
+        <div class="bmi-field">
+          <label>Weight (kg)</label>
+          <input type="number" id="weight" placeholder="e.g. 70" min="30" max="300">
+        </div>
+        <div class="bmi-field">
+          <label>Age</label>
+          <input type="number" id="age" placeholder="e.g. 25" min="10" max="100">
+        </div>
+        <div class="bmi-field">
+          <label>Gender</label>
+          <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-bmi" id="btnBmi">Calculate My BMI</button>
+
+      <div class="bmi-result" id="bmiResult">
+        <div class="bmi-result-num" id="bmiValue">0</div>
+        <div class="bmi-result-label" id="bmiCategory">Your Category</div>
+        <div class="bmi-result-advice" id="bmiAdvice"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section id="cta">
+  <div class="cta-content">
+    <h2 class="cta-title reveal">Start Your<br><span class="neon">Fitness</span><br>Journey Today</h2>
+    <p class="cta-sub reveal">No excuses. No limits. Just results.</p>
+    <div class="cta-actions reveal">
+      <a href="#membership" class="btn-primary"><span>Join Nirvana</span></a>
+      <a href="https://wa.me/917000000000?text=Hi!%20I%20want%20to%20book%20a%20free%20trial%20at%20Nirvana%20Gym" class="btn-outline" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="section-label reveal">Find Us</div>
+      <h2 class="section-title reveal">Come <span style="color:var(--neon)">Train</span><br>With Us</h2>
+
+      <div class="contact-items">
+        <div class="contact-item reveal">
+          <div class="contact-icon">&#x1F4CD;</div>
+          <div class="contact-detail">
+            <h4>Location</h4>
+            <p>Awadhpuri, Bhopal<br>Madhya Pradesh, India</p>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:0.1s">
+          <div class="contact-icon">&#x1F4DE;</div>
+          <div class="contact-detail">
+            <h4>Phone</h4>
+            <p><a href="tel:+917000000000">+91 70000 00000</a></p>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:0.2s">
+          <div class="contact-icon">&#x23F0;</div>
+          <div class="contact-detail">
+            <h4>Working Hours</h4>
+            <p>Monday – Saturday: 5:30 AM – 10:00 PM<br>Sunday: 6:00 AM – 8:00 PM</p>
+          </div>
+        </div>
+        <div class="contact-item reveal" style="transition-delay:0.3s">
+          <div class="contact-icon">&#x1F4E7;</div>
+          <div class="contact-detail">
+            <h4>Email</h4>
+            <p><a href="mailto:nirvanagimnbhopal@gmail.com">nirvanagym@bhopal.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/917000000000?text=Hi!%20I'm%20interested%20in%20joining%20Nirvana%20Gym" class="whatsapp-btn reveal" target="_blank" rel="noopener">
+        <span>&#x1F4AC;</span> Chat on WhatsApp
+      </a>
+
+      <div class="map-wrapper reveal" style="margin-top: 40px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.9!2d77.3691!3d23.2145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43d8f9e84461%3A0xc4b4b4b4b4b4b4b4!2sAwadhpuri%2C%20Bhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="contact-form reveal-right">
+      <div class="form-title">Book a Free Trial</div>
+
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="formName" placeholder="Rahul Sharma">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="formPhone" placeholder="+91 98765 43210">
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="formEmail" placeholder="you@email.com">
+      </div>
+      <div class="form-group">
+        <label>Interested In</label>
+        <select id="formInterest">
+          <option>Strength Training</option>
+          <option>Weight Loss</option>
+          <option>CrossFit</option>
+          <option>Personal Training</option>
+          <option>Yoga / Zumba</option>
+          <option>General Fitness</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message (Optional)</label>
+        <textarea id="formMessage" rows="3" placeholder="Tell us your fitness goals..."></textarea>
+      </div>
+      <button class="btn-submit" id="btnSubmit">Book Free Trial &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-main">NIRVANA</div>
+      <div class="logo-sub">The Fitness Studio</div>
+      <p>Awadhpuri's most dynamic fitness studio, where transformation happens every day. Your journey to the best version of yourself starts here.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" title="Instagram">&#x1F4F8;</a>
+        <a href="#" class="social-link" title="Facebook">&#x1F4D8;</a>
+        <a href="#" class="social-link" title="YouTube">&#x25B6;&#xFE0F;</a>
+        <a href="https://wa.me/917000000000" class="social-link" title="WhatsApp">&#x1F4AC;</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="#services">Strength Training</a></li>
+        <li><a href="#services">Weight Loss</a></li>
+        <li><a href="#services">CrossFit</a></li>
+        <li><a href="#services">Personal Training</a></li>
+        <li><a href="#services">Yoga & Zumba</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#trainers">Our Trainers</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#bmi">BMI Calculator</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <ul>
+        <li><a href="#">Mon–Fri: 5:30AM–10PM</a></li>
+        <li><a href="#">Saturday: 6AM–9PM</a></li>
+        <li><a href="#">Sunday: 6AM–8PM</a></li>
+        <li><a href="#">Holidays: 7AM–6PM</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 <span>Nirvana Gym – The Fitness Studio</span>. All rights reserved. | Awadhpuri, Bhopal</p>
+    <p>Designed for <span>Champions</span></p>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
